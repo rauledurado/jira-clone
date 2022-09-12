@@ -1,0 +1,60 @@
+<div class="flex flex-col w-full h-full py-8 pl-8 pr-6">
+    <breadcrumbs [items]="breadcrumbs"></breadcrumbs>
+    <header class="flex justify-between mt-3 text-textDarkest">
+        <div class="text-2xl font-medium">Kanban board</div>
+        <div class="social-links">
+            <a href=""
+               target="_blank"
+               rel="noopener">
+                <j-button className="btn-secondary mr-2"> 🍺 Support
+                </j-button>
+            </a>
+
+            <a href=""
+               target="_blank"
+               rel="noopener">
+                <j-button className="btn-secondary mr-2"> 🎧 Spotify
+                </j-button>
+            </a>
+
+            <a href=""
+               target="_blank"
+               rel="noopener">
+                <j-button className="btn-secondary mr-2"> 🎮 Tetris
+                </j-button>
+            </a>
+
+            <a href=""
+               target="_blank"
+               rel="noopener">
+                <j-button className="btn-secondary mr-2"> 📕 Storybook
+                </j-button>
+            </a>
+
+            <a href=""
+               (click)="sendTwitterEventButton()"
+               target="_blank"
+               rel="noopener"
+               class="mr-2">
+                <j-button className="btn-secondary">
+                    <div class="flex items-center">
+                        <i class="mr-2 text-blue-500"
+                           nz-icon
+                           nzType="twitter"
+                           nzTheme="outline"></i> Tweet
+                    </div>
+                </j-button>
+            </a>
+            <a href="https://github.com/trungk18/jira-clone-angular"
+               target="_blank"
+               rel="noopener">
+                <j-button className="btn-secondary"
+                          icon="github">Source Code
+                </j-button>
+            </a>
+        </div>
+    </header>
+
+    <board-filter></board-filter>
+    <board-dnd></board-dnd>
+</div>
